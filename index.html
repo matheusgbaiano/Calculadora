@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="calculadora">
+
+            <input id="painel" type="text" disabled="disabled" placeholder="0">
+            
+            <div class="bloco">
+                <div class="fila">
+                    <button onclick="calcular('acao','c')" type="button" class="botao limpar">C</button>
+                    <button onclick="calcular('acao','/')" type="button" class="botao">/</button>
+                    <button onclick="calcular('acao','*')" type="button" class="botao">x</button>
+                </div>
+
+                <div class="fila">
+                    <button onclick="calcular('numero','7')" type="button" class="botao">7</button>
+                    <button onclick="calcular('numero','8')" type="button" class="botao">8</button>
+                    <button onclick="calcular('numero','9')" type="button" class="botao">9</button>
+                    <button onclick="calcular('acao','-')" type="button" class="botao">-</button>
+                </div>
+
+                <div class="fila">
+                    <button onclick="calcular('numero','4')" type="button" class="botao">4</button>
+                    <button onclick="calcular('numero','5')" type="button" class="botao">5</button>
+                    <button onclick="calcular('numero','6')" type="button" class="botao">6</button>
+                    <button onclick="calcular('acao','+')" type="button" class="botao">+</button>
+                </div>
+
+                <div class="fila">
+                    <button onclick="calcular('numero','1')" type="button" class="botao um">1</button>
+                    <button onclick="calcular('numero','2')" type="button" class="botao dois">2</button>
+                    <button onclick="calcular('numero','3')" type="button" class="botao tres">3</button>
+                    <button onclick="calcular('acao','=')" type="button" class="botao enter">=</button>
+                </div>
+
+                <div class="fila">
+                    <button onclick="calcular('numero','0')" type="button" class="botao zero">0</button>
+                    <button onclick="calcular('acao','.')" type="button" class="botao ponto">.</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
