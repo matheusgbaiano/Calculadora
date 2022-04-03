@@ -1,27 +1,25 @@
 function calcular(tipo, valor){
 
+var elemento = document.getElementById("painel")
+
     if(tipo === "acao"){
 
         if(valor === "c" ){
-            document.getElementById("painel").value = ""
+            elemento.value = ""
         }
 
         if(valor === "/" || valor === "*" || valor === "-" || valor === "+" || valor === "."){
-            document.getElementById("painel").value += valor
+            elemento.value += valor
         }
 
         if(valor === "="){
-            var valorTot = eval(document.getElementById("painel").value)
-            document.getElementById("painel").value = valorTot
+            var valorTot = eval(elemento.value)
+            elemento.value = valorTot.toFixed(4)
         }
     } 
     else if( tipo === "numero"){
         
-        document.getElementById("painel").value += valor
+        elemento.value += valor
     }
-
-
-
-
 }
     
