@@ -14,7 +14,12 @@ var elemento = document.getElementById("painel")
 
         if(valor === "="){
             var valorTot = eval(elemento.value)
-            elemento.value = valorTot.toFixed(4)
+            elemento.value = valorTot
+        }
+
+        if(valor === "del"){
+            var valorTot = elemento.value
+            elemento.value = valorTot.substring(0, valorTot.length - 1)
         }
     } 
     else if( tipo === "numero"){
