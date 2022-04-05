@@ -1,5 +1,5 @@
 # Calculadora
-Primeiro projeto, aproximadamente 1 mês de estudos. Utilizando HTML, CSS e JavaScript. Com o decorrer do aprendizado pretendo voltar aqui e melhorá-la.<br>
+Primeiro projeto após pouco mais de 1 mês de estudos. Utilizando HTML, CSS e JavaScript. Com o decorrer do aprendizado pretendo voltar aqui e melhorá-la.<br>
 Link para visualizar: https://calculadoramgl.netlify.app/
 
 # Web
